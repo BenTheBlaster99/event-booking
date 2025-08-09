@@ -1,0 +1,165 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Primary Blue Colors */
+  --color-primary: 91 111 255;
+  --color-primary-light: 143 160 255;
+  --color-primary-lighter: 212 219 255;
+  --color-primary-darkest: 18 13 38;
+  
+  /* Secondary Cyan Colors */
+  --color-secondary: 0 240 255;
+  --color-secondary-light: 51 245 255;
+  --color-secondary-lighter: 179 252 255;
+  
+  /* Typography Colors (from your design) */
+  --color-text-main: 18 13 38;
+  --color-text-gray1: 136 134 147;
+  --color-text-gray2: 187 134 190;
+  --color-text-gray3: 221 207 212;
+  --color-text-gray4: 237 237 237;
+  
+  /* Accent Colors */
+  --color-accent-red: 240 83 90;
+  --color-accent-orange: 249 181 74;
+  --color-accent-green: 80 200 120;
+  --color-accent-darkCyan: 70 205 251;
+  --color-accent-purple: 160 32 240;
+  --color-accent-yellow: 253 196 0;
+  
+  /* Background Colors */
+  --color-background-dark: 57 59 90;
+  --color-background-gray: 230 230 230;
+  --color-background-light: 248 249 250;
+  
+  /* Typography Sizes (from your specs) */
+  --fontSize-h1: 50px;
+  --fontSize-h2: 35px;
+  --fontSize-h3: 30px;
+  --fontSize-h4: 24px;
+  --fontSize-h5: 22px;
+  --fontSize-title-1: 18px;
+  --fontSize-title-2: 16px;
+  --fontSize-title-3: 15px;
+  --fontSize-button: 16px;
+  --fontSize-body-2: 15px;
+  --fontSize-body-3: 14px;
+  --fontSize-subtitle-1: 13px;
+  --fontSize-subtitle-2: 12px;
+}
+
+@layer base {
+  /* Import Inter font (as requested for general use) */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+  
+  html {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  /* Typography Base Styles */
+  h1 {
+    font-size: var(--fontSize-h1);
+    line-height: 72px;
+    font-weight: bold;
+    color: rgb(var(--color-text-main));
+  }
+  
+  h2 {
+    font-size: var(--fontSize-h2);
+    font-weight: 600;
+    color: rgb(var(--color-text-main));
+  }
+  
+  h3 {
+    font-size: var(--fontSize-h3);
+    font-weight: 600;
+    color: rgb(var(--color-text-main));
+  }
+  
+  h4 {
+    font-size: var(--fontSize-h4);
+    font-weight: 500;
+    color: rgb(var(--color-text-main));
+  }
+  
+  h5 {
+    font-size: var(--fontSize-h5);
+    font-weight: 500;
+    color: rgb(var(--color-text-main));
+  }
+}
+
+/* Global component-like styles or custom element styles */
+onboarding-screen {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.rounded-t-3xl {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+/* Custom Typography Utility Classes  */
+.text-h4 {
+  font-size: var(--fontSize-h4);
+  font-weight: 600;
+}
+
+.text-body-2 {
+  font-size: var(--fontSize-body-2);
+}
+
+.text-button {
+  font-size: var(--fontSize-button);
+}
+
+.text-title-1 {
+  font-size: var(--fontSize-title-1);
+}
+
+.text-title-2 {
+  font-size: var(--fontSize-title-2);
+}
+
+.text-title-3 {
+  font-size: var(--fontSize-title-3);
+}
+
+.text-subtitle-1 {
+  font-size: var(--fontSize-subtitle-1);
+}
+
+.text-subtitle-2 {
+  font-size: var(--fontSize-subtitle-2);
+}
+
+/* Custom Color Utility Classes (using direct CSS properties) */
+.bg-primary {
+  background-color: rgb(var(--color-primary));
+}
+
+.text-primary {
+  color: rgb(var(--color-primary));
+}
+
+.bg-primary-darkest {
+  background-color: rgb(var(--color-primary-darkest));
+}
+
+.text-primary-darkest {
+  color: rgb(var(--color-primary-darkest));
+}
+
+.text-text-main {
+  color: rgb(var(--color-text-main));
+}
+
+.text-text-gray1 {
+  color: rgb(var(--color-text-gray1));
+}
+
+
+/* base big card structure */
+ 

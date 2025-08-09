@@ -1,0 +1,53 @@
+# Laravel / Project
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+.DS_Store
+Thumbs.db
+
+# Dependencies and builds
+/node_modules
+/vendor
+/public/build
+/public/hot
+/public/storage
+
+# Environment
+.env
+.env.backup
+.env.production
+.env.*.backup
+
+# Logs and caches
+*.log
+/.phpunit.cache
+/.phpunit.result.cache
+.phpactor.json
+
+# Storage (keep placeholder .gitignore files only)
+/storage/*.key
+/storage/pail
+storage/*
+!storage/*.gitignore
+storage/app/public/*
+!storage/app/public/.gitignore
+storage/framework/*
+!storage/framework/.gitignore
+storage/logs/*
+!storage/logs/.gitignore
+
+# Databases
+/database/*.sqlite
+
+# Homestead
+Homestead.json
+Homestead.yaml
+
+# Misc editor/solution files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
